@@ -1,0 +1,14 @@
+<div class="row d-flex justify-content-center">
+  <div class="col-lg-3" *ngFor="let item of products">    
+      
+      <div class="jumbotron text-center cardtable1">
+          <h5>{{item.title}}</h5>
+      
+         
+          <img src={{item.url}} style="width: 100px;height: 100px; border-radius: 50%;"/>  
+                   
+
+        </div>      
+      <div class="text-center"><button  class="btn btn-primary" type="submit" (click) =sendProduct(item.id)>View Details</button></div>
+  </div>
+</div>
